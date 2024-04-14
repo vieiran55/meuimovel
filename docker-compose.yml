@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  teste-app01:
+    build: ./
+    ports:
+      - "9000:80"
+    volumes:
+      - .:/var/www/html
+    restart: always
+    networks:
+      - docker
+
+networks:
+  docker:
+    driver: bridge
