@@ -3,7 +3,7 @@ services:
   teste-app01:
     build: ./
     ports:
-      - "9000:80"
+      - "9002:80"
     volumes:
       - .:/var/www/html
     restart: always
