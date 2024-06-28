@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  teste-app01:
+  meuimovel:
     build: ./
     ports:
       - "9002:80"
